@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head><title>File List</title></head>
+
+    <body>
+        current files (free space: {{ free }} MB)
+        <br /><br />
+
+        <!--form method="post" action="/delete"-->
+        <form method="post" action="/">
+            {% for item in fili %}
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="file" value="{{ item }}" id="{{ item }}">&nbsp;{{ item }} ({{ fisili[fili.index(item)] }} MB)</input><br />
+            {% end %}
+            <br />
+            <input type="submit" value="Delete">
+        </form>
+    </body>
+</html>
