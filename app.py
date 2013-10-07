@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/sh python2.7
 import os
 
 import tornado.httpserver
